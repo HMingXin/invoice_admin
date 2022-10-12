@@ -78,7 +78,7 @@
                     // 获取主页面列表数据
                     get_index_info: async function () {
                         // var info = await axios.get("http://127.0.0.1:5000/")
-                        var info = await axios.get("https://36l7827t57.zicp.fun")
+                        var info = await axios.get("https://5266mu4193.oicp.vip")
                         if (info.data.status == 200) {
                             // 数据获取成功
                             this.index_list = info.data.data
@@ -110,7 +110,7 @@
                             data.append("key", this.value)
                             data.append("value", this.input)
                             // var info = await axios.post("http://127.0.0.1:5000/query", data)
-                            var info = await axios.post("https://36l7827t57.zicp.fun/query", data)
+                            var info = await axios.post("https://5266mu4193.oicp.vip/query", data)
                             if (info.data.status = "200") {
                                 // 查询成功
                                 this.index_list = info.data.data
@@ -140,7 +140,7 @@
                             let data = new FormData();
                             data.append('num', JSON.stringify(this.select_box))
                             // var info = await axios.post("http://127.0.0.1:5000/download", data, { responseType: 'blob' })
-                            var info = await axios.post("https://36l7827t57.zicp.fun/download", data, { responseType: 'blob' })
+                            var info = await axios.post("https://5266mu4193.oicp.vip/download", data, { responseType: 'blob' })
                             if (info.status == 200) {
                                 // 数据获取成功
                                 let fileName = "test." + info.headers['content-type'].split('/')[1]
